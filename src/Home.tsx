@@ -42,7 +42,7 @@ export const Home: React.FC<HomeProps> = ({leaderboardData}) => {
                             <th>W</th>
                             <th>L</th>
                             <th>AVG</th>
-                            <th></th>
+                            <th>Player</th>
                           </tr>
                         </thead>
                         <tbody>
