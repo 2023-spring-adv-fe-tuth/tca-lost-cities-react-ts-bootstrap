@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tca-lost-cities-react-ts-bootstrap/static/css/main.756af292.css",
+    "main.js": "/tca-lost-cities-react-ts-bootstrap/static/js/main.aa0804a4.js",
+    "static/js/787.f02003ea.chunk.js": "/tca-lost-cities-react-ts-bootstrap/static/js/787.f02003ea.chunk.js",
+    "index.html": "/tca-lost-cities-react-ts-bootstrap/index.html",
+    "main.756af292.css.map": "/tca-lost-cities-react-ts-bootstrap/static/css/main.756af292.css.map",
+    "main.aa0804a4.js.map": "/tca-lost-cities-react-ts-bootstrap/static/js/main.aa0804a4.js.map",
+    "787.f02003ea.chunk.js.map": "/tca-lost-cities-react-ts-bootstrap/static/js/787.f02003ea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.756af292.css",
+    "static/js/main.aa0804a4.js"
+  ]
+}
