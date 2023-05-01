@@ -1,19 +1,33 @@
+
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useNavigate } from 'react-router-dom';
 import { LeaderboardPlayer } from './front-end-model';
 import Table from 'react-bootstrap/Table';
- 
+import { durationFormatter } from 'human-readable'; 
+import CardHeader from 'react-bootstrap/esm/CardHeader';
 
 interface HomeProps {
     leaderboardData: LeaderboardPlayer[];
+    shortestGameDuration: number;
+    longestGameDuration: number;
 };
 
-export const Home: React.FC<HomeProps> = ({leaderboardData}) => {
+export const Home: React.FC<HomeProps> = ({
+    leaderboardData
+    , shortestGameDuration
+    , longestGameDuration
+}) => {
 
-    console.log(leaderboardData);
+    console.log(
+        leaderboardData
+        , shortestGameDuration
+        , longestGameDuration    
+    );
 
     const nav = useNavigate();
+
+    const format = durationFormatter();
 
     return (
         <>
@@ -59,6 +73,19 @@ export const Home: React.FC<HomeProps> = ({leaderboardData}) => {
                         </tbody>
                       </Table>
                     }
+                </Card.Body>
+            </Card>
+            <Card>
+                <CardHeader>
+                    Game Time Fun Facts
+                </CardHeader>
+                <Card.Body>
+                    <p>
+                        {`${format(shortestGameDuration)} shortest game ever`}
+                    </p>
+                    <p>
+                        {`${format(longestGameDuration)} longest game ever`}
+                    </p>
                 </Card.Body>
             </Card>
         </>
