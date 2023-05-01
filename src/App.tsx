@@ -102,7 +102,7 @@ const App = () => {
                 leaderboardData={calculateLeaderboard(results)}
                 shortestGameDuration={getShortestGameDuration(results)}
                 longestGameDuration={getLongestGameDuration(results)}
-                averageGameDurationData={getLongestGameDuration(results)}
+                averageGameDurationData={getAverageGameDurationByPlayerCount(results)}
               />} 
           />
           <Route 
