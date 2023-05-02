@@ -118,7 +118,7 @@ export const getAverageGameDurationByPlayerCount = (results: GameResult[]) => {
     return [...grouped]
         .map(x => ({
             playerCount: x[0]
-        , getAverageGameDuration: getAverageGameDuration(x[1])
+        , avgGameDuration: getAverageGameDuration(x[1])
     }))
     .sort(
         (a, b) => a.playerCount < b.playerCount ? -1 : 1

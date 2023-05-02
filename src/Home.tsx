@@ -12,9 +12,9 @@ interface HomeProps {
     shortestGameDuration: number;
     longestGameDuration: number;
     averageGameDurationData: {
-        playerCount: number;
-        avgGameDuration: number;
-    }[];
+		playerCount: number;
+		avgGameDuration: number;
+	}[];
 };
 
 export const Home: React.FC<HomeProps> = ({
