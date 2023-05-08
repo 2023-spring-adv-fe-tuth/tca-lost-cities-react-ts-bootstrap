@@ -22,6 +22,7 @@ import {
   , getLongestGameDuration
   , getAverageGameDurationByPlayerCount
   , getPercentGamesReallyCoolThingHappened
+  , getChartData
 } from './front-end-model';
 
 const hardcodedGameResults: GameResult[] = [
@@ -112,6 +113,7 @@ const App = () => {
                 longestGameDuration={getLongestGameDuration(results)}
                 averageGameDurationData={getAverageGameDurationByPlayerCount(results)}
                 reallyCoolThingHappenedPercent={getPercentGamesReallyCoolThingHappened(results)}
+                chartData={getChartData(results)}
               />} 
           />
           <Route 

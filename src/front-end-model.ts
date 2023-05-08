@@ -133,3 +133,17 @@ export const getPercentGamesReallyCoolThingHappened = (results: GameResult[]) =>
         : 0
     ;
 };
+
+export const getChartData = (results: GameResult[]) => {
+    return {
+        labels: ['5/2/23', '5/3/23', '5/4/23', '5/4/23', '5/5/23', '5/6/23', '5/7/23'],
+        datasets: [
+          {
+            label: 'My First dataset',
+            backgroundColor: 'rgba(194, 116, 161, 0.5)',
+            borderColor: 'rgb(194, 116, 161)',
+            data: [0, 0, 0, 0, 1, 0, 2],
+          }
+        ],
+      };
+};
