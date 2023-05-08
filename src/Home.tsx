@@ -163,7 +163,7 @@ export const Home: React.FC<HomeProps> = ({
             </Card>
             <Card>
                 <CardHeader>
-                    Bar Chart Default
+                    Bar Chart Experiment
                 </CardHeader>
                 <Card.Body>
                     <Chart></Chart>

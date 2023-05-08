@@ -75,6 +75,27 @@ const hardcodedGameResults: GameResult[] = [
       , end: "2023-04-30T23:41:51.496Z"
       , reallyCoolThingHappened: false
   }
+  , {
+    winner: "Edward"
+    , players: ["Edward", "Tom"]
+    , start: "2023-05-05T18:07:33.828Z"
+    , end: "2023-05-05T18:27:33.828Z"
+    , reallyCoolThingHappened: false
+}
+, {
+    winner: "Edward"
+    , players: ["Edward", "Tom"]
+    , start: "2023-05-07T18:07:33.828Z"
+    , end: "2023-05-07T18:27:33.828Z"
+    , reallyCoolThingHappened: false
+}
+, {
+    winner: "Tom"
+    , players: ["Edward", "Tom"]
+    , start: "2023-05-07T18:28:33.828Z"
+    , end: "2023-05-07T18:58:33.828Z"
+    , reallyCoolThingHappened: true
+}
 ];
 
 const App = () => {
