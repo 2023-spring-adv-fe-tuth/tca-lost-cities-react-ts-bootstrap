@@ -39,7 +39,10 @@ interface HomeProps {
 	}[];
     reallyCoolThingHappenedPercent: number;
     chartData: any;
+    gameByDay: any;
 };
+
+
 
 export const Home: React.FC<HomeProps> = ({
     leaderboardData
@@ -48,6 +51,7 @@ export const Home: React.FC<HomeProps> = ({
     , averageGameDurationData
     , reallyCoolThingHappenedPercent
     , chartData
+    , gamesByDay
 }) => {
 
     console.log(

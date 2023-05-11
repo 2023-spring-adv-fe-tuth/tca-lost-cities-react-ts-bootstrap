@@ -23,6 +23,7 @@ import {
   , getAverageGameDurationByPlayerCount
   , getPercentGamesReallyCoolThingHappened
   , getChartData
+  , getGamesByDay
 } from './front-end-model';
 
 const hardcodedGameResults: GameResult[] = [
@@ -135,6 +136,7 @@ const App = () => {
                 averageGameDurationData={getAverageGameDurationByPlayerCount(results)}
                 reallyCoolThingHappenedPercent={getPercentGamesReallyCoolThingHappened(results)}
                 chartData={getChartData(results)}
+                gamesByDay={getGamesByDay(gameResults)}
               />} 
           />
           <Route 
